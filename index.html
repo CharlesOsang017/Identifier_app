@@ -31,14 +31,27 @@
             <img src="./images/culture.jpg">
         </div>
     
-        <div class="card  bg-primary">
+        <div class="card  bg-warning">
         <h3>How do you identifier?</h3>
         <input type="radio" name="gender" checked> Male
         <i class="fa fa-mars" aria-hidden="true"></i>
           <input type="radio" name="gender"> Female
         <i class="fa fa-venus" aria-hidden="true"></i>
     </div>
-
+    <div class="card">
+    <h5>Enter your personal details below</h5>
+    <p>Date of Birth:</p>
+    <form action="document">
+        <label for="fname">Day of Birth:</label><br>
+        <input type="text" id="DOB"><br>
+        <label for="lname">Month of birth:</label><br>
+        <input type="text" id="MOB"><br><br>
+        <label for="lname">Year of birth:</label><br>
+        <input type="text" id="YOB"><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+      </form> 
+</div>
 <script src="./script.js"></script>
 <link rel="stylesheet" href="./js/bootstrap.min.js">
 </body>
