@@ -1,0 +1,19 @@
+.landing-page {
+    /* background-image: url(../images/Ghanian.jpg); */
+    /* height: 80vh; */
+    /* width: 40vw; */
+    background-color: cadetblue;
+}
+li {
+     display: inline;
+    margin: 15px;
+    margin-left: 65rem;
+    list-style: none;
+    text-decoration: none;
+     
+     /* list-style: none;
+    display: inline;
+    margin: 5px;
+    padding-top: 0.5vh;
+    color: white; */
+}
