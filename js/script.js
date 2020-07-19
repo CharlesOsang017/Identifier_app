@@ -41,7 +41,7 @@ function charles(d, m, y, g) {
     d = parseInt(d);
     m = parseInt(m);
     y = parseInt(y);
-    var cc = (y - 1) / 100 + 1;
+    var cc = (y - 1) / 100 + 2;
     var formula = parseInt(((26 * (m + 1) / 10)) + ((5 * y / 4)) + ((cc / 4) - 2 * cc - 1) + d) % 7;
     var male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     var female = ["Akosua", " Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
@@ -54,7 +54,7 @@ function charles(d, m, y, g) {
         alert("Invalid day");
         return 0;
     }
-    else if(y<1 || y>2020){alert('Invalid year')}
+    else if(y<1489 || y>2020){alert('Invalid year')}
 
     if (g == 'm') {
         g = male;
