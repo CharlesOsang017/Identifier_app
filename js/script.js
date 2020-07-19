@@ -18,7 +18,7 @@ function checkEmpty() {
     y = _v('year');
     g = _v('g');
     if (d == '' && m == '' && y == '' && g == '') {
-        alert('Your day, month and year of birth and gender are needed to calculate your Akan name');
+        alert('make sure you have provided all the required information inorder to get your Akan name');
         return 0;
     } else if (d == '') {
         alert('Provide your day date of birth eg 01 for first day of the month');
@@ -48,26 +48,26 @@ function ben(d, m, y, g) {
     var day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
     if (m < 1 || m > 12 || m == 2 && d > 29) {
-        alert("INVALID MONTH");
+        alert("Invalid month");
         return 0;
     } else if (d < 1 || d > 31) {
-        alert("INVALID DAY");
+        alert("Invalid day");
         return 0;
     }
-    else if(y<1 || y>2019){alert('INVALID YEAR CHOICE')}
+    else if(y<1 || y>2020){alert('Invalid year')}
 
     if (g == 'm') {
         g = male;
     } else if (g == 'f') {
         g = female;
     } else {
-        alert("Unsupported gender");
+        alert("Please choose from the options given");
         return 0;
     }
 
     for (var a = 0; a < 7; a++) {
         if (Math.ceil(formula) == (a)) {
-            document.getElementById("results").innerHTML = ("Your day of birth is: " + day[a] + "<br/>Your proud Ghanaian Akan name would have been " + g[a]);     
+            document.getElementById("results").innerHTML = ("Your day of birth is: " + day[a] + "<br/>Your Akan name is   " + g[a]);     
             return 0;
         }
     }
@@ -90,39 +90,3 @@ function ben(d, m, y, g) {
 
 
 
-
-
-
-// var days = ["Sunady", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-// var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-// var femaleNames =["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-
-// function dateOfBirth(){
-//     var days =parseInt(document.getElementById("days").value);
-//     var months = document.getElementById("months").value;
-//     var year = 2007
-//     var cc = year.substring(0,2)
-//     var yy = year.substring(2,4)
-//      if(days < 1 || days > 31){
-//          alert(Invalid number of day(s))
-//      }
-//     if(days < 1 || days > 31){
-//         alert("Invalid data")
-//     }
-//     if(months < 1 || months > 12){
-//         alert("Invalid data")
-//     }
- 
-//     days(d)
-//     months(d)
-//     years(d)
-
-//     (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7
-
-//     if (gender ==='male'){
-//         alert()
-//     }
-//     if (gender === 'female'){
-//         alert()
-//     }
-// }
