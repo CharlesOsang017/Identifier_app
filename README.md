@@ -9,7 +9,7 @@ Identifier app for Akan names, is an app that gives out the Ghanian Akan names d
 The app can be downloaded and installed in either phone,tablet,computer and any other device.
 ## BDD (Behaviour Driven Development)
 | inputs  | Description   |
-| .........|...............|
+| :.........:|:...............:|
 |Day      | Day of birth eg, 01,11|
 |Month    | Month of birth eg, January, February|
 |Year     |Year of birth eg, 1999,2010  |
