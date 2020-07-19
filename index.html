@@ -1,100 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Akan name identifier</title>
-    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
-   <link rel="stylesheet" href="./css/styles.css">
-   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-   <link rel="stylesheet" href="./css/bootstrap.min.css">
-  
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
+
 <body>
-<div class="container-fluid">
-    <div class="landing-page">
-        <div class="card bg-info d-flex text-center">
-        <h1>IDENTIFIER PRO APP</h1>
-    </div>
-        <ul>
-          <a href="#Home"><li>Home</li></a> 
-          <a href="#About"><li>About</li></a> 
-         <a href="#Contact"><li>Contact</li></a>   
-        </ul>
-        
-        <h2 class="Akan bg-success text-center">Akan name identifier</h2>
-    
-        <p class="paragraph text-center">Akan names are derived from Ghanian culture. <br>Frequently in Ghana, children are given their first name as a 'day name' <br> corresponds to the day in the week they were born.</p>
-   
-    </div>
-    <div class="overlay">
-        <div class="card">
-            <img src="./images/culture.jpg">
+    <div class="container-fluid">
+        <div class="landing-page">
+            <div class="card bg-info d-flex text-center">
+                <h1>IDENTIFIER PRO APP</h1>
+            </div>
+            <ul>
+                <a href="#Home">
+                    <li>Home</li>
+                </a>
+                <a href="#About">
+                    <li>About</li>
+                </a>
+                <a href="#Contact">
+                    <li>Contact</li>
+                </a>
+            </ul>
+            <h2 class="Akan bg-success text-center">Akan name identifier</h2>
+            <p class="paragraph text-center">Akan names are derived from Ghanian culture. <br>Frequently in Ghana,
+                children are given their first name as a 'day name' <br> corresponds to the day in the week they were
+                born.</p>
         </div>
-        
-        <div class="card  bg-warning">
-        <h3>How do you identify?</h3>
-        <input type="radio" name="gender" checked> Male
-        <i class="fa fa-mars" aria-hidden="true"></i>
-          <input type="radio" name="gender"> Female
-        <i class="fa fa-venus" aria-hidden="true"></i>
-    </div>
-    <div class="card bg-info">
-    <h5>Enter your personal details below</h5>
-    
-    <form>
-        <label for="Days">Day of Birth:</label><br>
-        <input id="DOB" name="Days" type="Days" placeholder="example, 01,02...">
-       </form>
-    
-       <form>
-        <label for="Months">Month of Birth:</label><br>
-        <input id="MOB"  name="Months" type="Months" placeholder="example, January,February....">
-       </form>
-       
-       <form>
-        <label for="Years">Year of Birth</label><br>
-        <input id="YOB" name="Years" type="Years" placeholder="example, 1999,2019,2020..">
-       </form>
+        <div class="overlay">
+            <div class="card">
+                <img src="./images/culture.jpg">
+            </div>
 
-       <form>
-       <input type="submit" value="Submit">
-       <input type="reset">
-    </form>
-</div>
-<div class="card">
-    <div class="tech">
-        <h4>Technologies </h4>
-        
-    
-        <img src="./images/fontawesome.png">
-        <img src="./images/COMBINATIO.jpeg">
-        
-       <div class="footer">
-       <div class="privacy text-end">
-           <p>|PRIVACY | ABOUT | CONTACT<br>IDENTIFIER PRO APP: What we do is to recognize</p>
-       </div>
-       <div class="icons">
-       <p>Follow us</p>
-       <i class="fab fa-twitter"></i>
-    
-       <i class="fab fa-facebook"></i>
-    
-       <i class="fab fa-telegram-plane"></i>
-    
-       <i class="fab fa-instagram-square"></i>
-       <i class="fab fa-skype"></i>
-    
-       <i class="fab  fa-youtube"></i>
-    </div>
-    <p class="cpy text-center">COPYRITE(C) 2020 : IDENTIFIER PRO APP</p>
-       </div>
-      
-       
-        
-       
+            <div class="card bg-info">
+                <h5>Enter your personal details below</h5>
 
-<script src="./script.js"></script>
-<link rel="stylesheet" href="./js/bootstrap.min.js">
-</body>
-</html>
+                <div class="forms">
+                    <form name="form">
+                        <label>DAY <input type="number" name="day"></label>
+                        <label>MONTH <input type="number" name="month"></label>
+                        <label>YEAR <input type="number" dername="year"></label>
+                        <label>GENDER
+                            <label><input type="radio" name="g" value="m"> Male </label>
+                            <label><input type="radio" name="g" value="f"> Female </label>
+                        </label>
+                        <input type="submit" value="Submit" name="btn" class="button">
+                    </form>
+                    <script src="js/script.js"></script>
+
+                    </script><br><br>
+
+                    <p id="results"></p>
+
+                    <br><br>
+                </div>
+
+            </div>
+            <div class="tech">
+                <h4 class="it text-center text-white">Technologies </h4>
+                <img src="./images/fontawesome.png">
+                <img src="./images/COMBINATIO.jpeg">
+            </div>
+            <div class="footer">
+                <div class="privacy text-white">
+                    <p>|PRIVACY | ABOUT | CONTACT<br>IDENTIFIER PRO APP: What we do is to recognize</p>
+                </div>
+                <div class="icons text-white">
+                    <p>Follow us</p>
+
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-telegram-plane"></i>
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fab fa-skype"></i>
+                    <i class="fab  fa-youtube"></i>
+                </div>
+                <p class="cpy text-center text-white">COPYRITE(C) 2020 : IDENTIFIER PRO APP</p>
+            </div>
+        </div>
+        <script src="js/script.js" type="text/javascript">
+            <link rel="stylesheet" href="js/bootstrap.min.js">
+       </body>
+    </html>
