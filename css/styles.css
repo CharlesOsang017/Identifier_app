@@ -8,11 +8,8 @@
     background-color: steelblue;
 }
 .navigation li{
-    text-decoration: wavy;
-   display: flex;
-   flex-direction: row-reverse;
-   list-style: none;
+    display: flex;
+    text-decoration: none;
    display: inline;
-   margin: 5px;
-   padding-top: 0.5vh;
+   margin: 10px;
 }
