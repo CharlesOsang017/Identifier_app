@@ -24,20 +24,20 @@ function checkEmpty() {
         alert('Provide your day date of birth eg 01 for first day of the month');
         return 0;
     } else if (m == '') {
-        alert('Provide your month date of birth eg 12 for December');
+        alert('Provide your month of birth please!!');
         return 0;
     } else if (y == '') {
-        alert('Provide your year date of birth eg 2019');
+        alert(' Provide your year of birth please!!');
         return 0;
     } else if (g == '') {
         alert('Provide your gender');
         return 0;
     } else {
-        ben(d, m, y, g);
+        charles(d, m, y, g);
     }
 }
 
-function ben(d, m, y, g) {
+function charles(d, m, y, g) {
     d = parseInt(d);
     m = parseInt(m);
     y = parseInt(y);
