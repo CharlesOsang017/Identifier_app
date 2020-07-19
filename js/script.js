@@ -1,22 +1,22 @@
  
-function _f() {
+function dateOfBirth() {
     return document.forms['form'];
 }
-var a, b, c;
-_f()['btn'].addEventListener('click', function (e) {
+var k, b, c;
+dateOfBirth()['btn'].addEventListener('click', function (e) {
     e.preventDefault();
     checkEmpty();
 });
 
 function checkEmpty() {
-    function _v(a) {
-        return _f()[a].value;
+    function w(k) {
+        return dateOfBirth()[k].value;
     }
     var d, m, y, g;
-    d = _v('day');
-    m = _v('month');
-    y = _v('year');
-    g = _v('g');
+    d = w('day');
+    m = w('month');
+    y = w('year');
+    g = w('g');
     if (d == '' && m == '' && y == '' && g == '') {
         alert('make sure you have provided all the required information inorder to get your Akan name');
         return 0;
@@ -65,9 +65,9 @@ function charles(d, m, y, g) {
         return 0;
     }
 
-    for (var a = 0; a < 7; a++) {
-        if (Math.ceil(formula) == (a)) {
-            document.getElementById("results").innerHTML = ("Your day of birth is: " + day[a] + "<br/>Your Akan name is   " + g[a]);     
+    for (var k = 0; k< 7; k++) {
+        if (Math.ceil(formula) == (k)) {
+            document.getElementById("results").innerHTML = ("Your day of birth is: " + day[k] + "<br/>Your Akan name is   " + g[k]);     
             return 0;
         }
     }
