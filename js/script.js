@@ -1,4 +1,4 @@
- 
+
 function dateOfBirth() {
     return document.forms['form'];
 }
@@ -21,7 +21,7 @@ function checkEmpty() {
         alert('make sure you have provided all the required information inorder to get your Akan name');
         return 0;
     } else if (d == '') {
-        alert('Provide your day date of birth eg 01 for first day of the month');
+        alert('Provide your day of birth please!!');
         return 0;
     } else if (m == '') {
         alert('Provide your month of birth please!!');
@@ -54,7 +54,7 @@ function charles(d, m, y, g) {
         alert("Invalid day");
         return 0;
     }
-    else if(y<1489 || y>2020){alert('Invalid year')}
+    else if (y < 1489 || y > 2020) { alert('Invalid year') }
 
     if (g == 'm') {
         g = male;
@@ -65,9 +65,9 @@ function charles(d, m, y, g) {
         return 0;
     }
 
-    for (var k = 0; k< 7; k++) {
-        if (Math.ceil(formula) == (k)) {
-            document.getElementById("results").innerHTML = ("Your day of birth is: " + day[k] + "<br/>Your Akan name is   " + g[k]);     
+    for (var k = 0; k < 7; k++) {
+        if (Math.floor(formula) == (k)) {
+            document.getElementById("results").innerHTML = ("Your day of birth is: " + day[k] + "<br/>Your Akan name is   " + g[k]);
             return 0;
         }
     }
